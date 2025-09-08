@@ -1,7 +1,6 @@
 # GoodMorning Line Bot (Broadcast, GitHub Actions)
 
-每天早上 08:00（台北時間） 自動透過 LINE Messaging API 廣播一張「早安圖」給所有把此 bot 加為好友的人。
-本專案採用 GitHub Actions 定時執行，無需自架伺服器。
+每天早上 08:00（台北時間） 自動透過 LINE Messaging API 廣播一張「早安圖」給所有把此 bot 加為好友的人，讓我不用早起也可以跟我阿嬤問早。本專案採用 GitHub Actions 定時執行，無需自架伺服器。
 
 ---
 
@@ -53,3 +52,15 @@ GitHub repo（Right here）
 額度：官方免費方案每月約 500 則訊息；超過需升級方案。
 
 測試成功但排程沒跑：確認 Actions 未被停用、gm.yml 在 .github/workflows/、分支設定正確、cron 時區為 UTC。
+
+---
+
+## 專案結構
+.
+├─ .github/
+│ └─ workflows/
+│ └─ gm.yml # GitHub Actions 工作流程
+├─ requirements.txt # Python 依賴（requests）
+├─ send_gm_broadcast.py # 廣播圖片腳本
+├─ .gitignore # 自動生成
+└─ LICENSE # 自動生成
