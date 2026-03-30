@@ -2,7 +2,7 @@ name: good-morning-broadcast
 
 on:
   schedule:
-    - cron: "0 0 * * *"   # 每天 00:00 UTC = 台北 08:00
+    - cron: "0 0 * * *"   #每天00:00 UTC=台北時間 08:00
   workflow_dispatch:
 
 jobs:
