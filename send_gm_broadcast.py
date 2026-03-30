@@ -9,8 +9,7 @@ REPO_NAME = "GoodMorning_linebot"
 BRANCH_NAME = "main"
 
 IMAGE_FILES = [
-    "01.jpg",
-    "02.jpg"
+    "goodmorning01.png"
 ]
 
 def broadcast_image(url: str):
